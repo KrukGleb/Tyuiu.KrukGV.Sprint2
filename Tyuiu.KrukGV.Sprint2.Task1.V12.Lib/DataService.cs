@@ -18,6 +18,7 @@ namespace Tyuiu.KrukGV.Sprint2.Task1.V12.Lib
             res[3] = (b > c) && (d < c); // false
             res[4] = !(b == c); // true
             res[5] = (a < d) ^ (d < c); // false
+
             
             return res;
         }
