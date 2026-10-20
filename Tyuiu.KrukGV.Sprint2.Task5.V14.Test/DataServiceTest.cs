@@ -11,7 +11,7 @@ namespace Tyuiu.KrukGV.Sprint2.Task5.V14.Test
             DataService ds = new DataService();
 
             var res = ds.FindDayName(1, 3);
-            Assert.AreEqual("среда", res);
+            Assert.AreEqual("Среда", res);
         }
     }
 }
