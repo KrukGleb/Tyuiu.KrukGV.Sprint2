@@ -41,7 +41,7 @@ namespace Tyuiu.KrukGV.Sprint2.Task2.V9
             bool res = ds.CheckDotInShadedArea(x,y);
             
             Console.WriteLine(res);
-            
+
             Console.ReadKey();
         }
     }
