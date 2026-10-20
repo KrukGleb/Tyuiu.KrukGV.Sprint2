@@ -6,7 +6,14 @@ namespace Tyuiu.KrukGV.Sprint2.Task0.V17.Lib
     {
         public bool[] GetCompareOperations(int x, int y)
         {
-            return [x - 310 == y, x - 310 != y, x < y, y > x, x <= y, y >= x];
+            bool[] res = new bool[6];
+            res[0] = x - 310 == y;
+            res[1] = x - 310 != y;
+            res[2] = x < y;
+            res[3] = y > x;
+            res[4] = x <= y;
+            res[5] = y >= x;
+            return res;
         }
     }
 }
