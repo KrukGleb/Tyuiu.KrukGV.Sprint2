@@ -11,7 +11,7 @@ namespace Tyuiu.KrukGV.Sprint2.Task6.V8.Test
             DataService ds = new DataService();
 
             var res = ds.FindDateOfPreviousDay(1, 2);
-            Assert.AreEqual("31.1", res);
+            Assert.AreEqual("31.01", res);
         }
     }
 }

@@ -6,8 +6,13 @@ namespace Tyuiu.KrukGV.Sprint2.Task6.V8.Lib
     {
         public string FindDateOfPreviousDay(int m, int n)
         {
+            string prev_str = (n < 10)
+                ? "0" + n
+                : Convert.ToString(n);
+
             if (m > 1)
-                return $"{m - 1}.{n}";
+                return $"{m - 1}.{prev_str}";
+
             int prev = (n == 1) ? 12 : n - 1;
 
             int day = prev switch
@@ -24,9 +29,13 @@ namespace Tyuiu.KrukGV.Sprint2.Task6.V8.Lib
                 10 => 31, // окт
                 11 => 30, // ноя
                 12 => 31 // дек
-             };
+            };
+            prev_str = (prev < 10)
+                ? "0" + prev
+                : Convert.ToString(prev);
 
-            return $"{day}.{prev}";
+
+            return $"{day}.{prev_str}";
         }
     
         
